@@ -12,7 +12,7 @@ public class Pedido {
     public Pedido( int id, String direccionEntrega, EstadoPedido estadoPedido) {
         this.direccionEntrega = direccionEntrega;
         this.id = id;
-        this.estadoPedido = estadoPedido;
+        this.estadoPedido = EstadoPedido.PENDIENTE;
     }
 
     public int getId() {
