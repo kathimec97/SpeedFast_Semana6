@@ -10,6 +10,10 @@ import java.util.List;
 public class ZonaDeCarga {
     private final List<Pedido> pedidosPendientes = new ArrayList<>();
 
+    public List<Pedido> getPedidosPendientes() {
+        return pedidosPendientes;
+    }
+
     /**
      * Agrega un pedido a la zona de carga de forma segura.
      * @param p el objeto pedido que ingresa al almacén.

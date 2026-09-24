@@ -8,11 +8,13 @@ public class Pedido {
     private int id;
     private String direccionEntrega;
     private EstadoPedido estadoPedido;
+    private TipoPedido tipoPedido;
 
-    public Pedido( int id, String direccionEntrega, EstadoPedido estadoPedido) {
+    public Pedido( int id, String direccionEntrega, EstadoPedido estadoPedido, TipoPedido tipoPedido ) {
         this.direccionEntrega = direccionEntrega;
         this.id = id;
         this.estadoPedido = EstadoPedido.PENDIENTE;
+        this.tipoPedido = tipoPedido;
     }
 
     public int getId() {
@@ -37,6 +39,14 @@ public class Pedido {
 
     public void setEstadoPedido(EstadoPedido estadoPedido) {
         this.estadoPedido = estadoPedido;
+    }
+
+    public TipoPedido getTipoPedido() {
+        return tipoPedido;
+    }
+
+    public void setTipoPedido(TipoPedido tipoPedido) {
+        this.tipoPedido = tipoPedido;
     }
 
     /**
